@@ -1,3 +1,12 @@
 p {
-	font-size: 140px;
+	font-size: 30px;
 }
+
+a {
+	color: pink;
+
+}
+
+.link { color: #FF0000; } /* CSS link color (red) */
+
+.link:hover { color: #00FF00; } /* CSS link hover (green) */
