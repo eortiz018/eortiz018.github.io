@@ -6,9 +6,14 @@ a {
 	color: indianred;
 }
 
-body {
-  background-color: floralwhite;
+h1 {
+  font-family: "Courier New", Courier, monospace;
 }
+
+p {
+  font-family: "Times New Roman", Times, monospace;
+}
+
 
 .link { color: #FF0000; } /* CSS link color (red) */
 
