@@ -22,16 +22,14 @@ p {
   font-family: "Times New Roman", Times, monospace;
 }
 
-
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
+@media screen and (min-width: 400px) {
+  body {
+    background-color: ivory;
   }
-}
+
 
 .buttons {
-	background-color: #green;
+	background-color: #edc4c4;
 }
 
 
