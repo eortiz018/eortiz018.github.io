@@ -18,6 +18,10 @@ p {
   font-family: "Times New Roman", Times, monospace;
 }
 
+span {
+	style="background-color:#edc4c4
+}
+
 
 .link { color: #FF0000; } /* CSS link color (red) */
 
