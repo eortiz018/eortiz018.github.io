@@ -2,6 +2,10 @@ a {
 	color: indianred;
 }
 
+head {
+  font-weight: bold;
+}
+
 h1 {
   font-family: "Courier New", Courier, monospace;
 }
@@ -20,7 +24,7 @@ p {
 
 
 span {
-	background-color: #edc4c4;
+	background-color: #green;
 }
 
 
