@@ -23,6 +23,13 @@ p {
 }
 
 
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
 .buttons {
 	background-color: #green;
 }
