@@ -1,4 +1,3 @@
-#use json formatter online
 import json
 import matplotlib.pyplot as plt
 
@@ -13,7 +12,7 @@ with open('JSON US Annual Average Temperature and Anomaly (1880-2015 vs. 1901-20
     ustemp=json.loads(text)
     
 #==============================================
-    
+ 
 x = list(globaltemp['data'].keys())
 y = list(globaltemp['data'].values())
 
@@ -22,7 +21,6 @@ plt.ylabel('Global Temperature Anomaly (C)')
 plt.xlabel('Year')
 plt.title('Global Temperature Anomaly (1880-2015 vs. 1901-2000 Average)')
 plt.savefig('globaltemp.png')
-#plt.show()
 
 #==============================================
 
@@ -36,19 +34,10 @@ y1 = y1[-10:]
 y2 = [float(val['anomaly']) for val in list(values)]
 y2 = y2[-10:]
 
-fig, ax = plt.subplots()
-
-ax.plot(x, y1, color='r')
-ax.tick_params(axis='y', labelcolor='r')
-
-ax2 = ax.twinx()
-ax.plot(x, y2, color='b')
-ax.tick_params(axis='y', labelcolor='b')
-
-plt.xlabel('Year')
-plt.ylabel('Temperature (C)')
+plt.plot(x, y1, label='Average Temperature')
+plt.plot(x, y2, label='Temperature Anomaly')
+plt.legend()
+plt.xlabel("Years")
+plt.ylabel("Temperature (F)")
 plt.title('US Annual Avg Temp & Anomaly (1880-2015 vs. 1901-2000 Avg)')
-fig.tight_layout()
 plt.savefig('ustemp.png')
-
-
